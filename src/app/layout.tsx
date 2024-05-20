@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from "@/utils/Providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Providers>
+        <body suppressHydrationWarning={true} className="bg-[#1C2545]">
+          {children}
+        </body>
+      </Providers>
     </html>
   );
 }
