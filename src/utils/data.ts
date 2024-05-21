@@ -46,7 +46,7 @@ export const analyticsData: analyticsProps[] = [
     exclusiveContent: 1289,
   },
   {
-    month: "jaunary",
+    month: "january",
     totalUsers: 3898,
     newUsers: 3111,
     totalDailyActiveUsers: 978,

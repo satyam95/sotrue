@@ -47,7 +47,6 @@ export default function Overview() {
         (data: analyticsProps) => data.month === date
       );
       setFilteredData(data || null);
-      console.log(date);
     }
   }, [dropdown]);
 

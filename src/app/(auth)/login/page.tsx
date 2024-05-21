@@ -33,6 +33,7 @@ const Login = () => {
         alt="sotrue logo"
         height={99}
         width={225}
+        priority
         className="m-auto"
       />
       <div className="text-4xl text-white font-medium text-center">Log in</div>
@@ -55,7 +56,7 @@ const Login = () => {
               onChange={({ target }) =>
                 setUserInfo({ ...userInfo, password: target.value })
               }
-              type="text"
+              type="password"
               placeholder="Password"
               className="bg-transparent outline-none text-xs text-[#ffffff99] w-full"
             />

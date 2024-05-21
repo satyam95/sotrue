@@ -15,7 +15,7 @@ export default function Layout({
   const router = useRouter();
   useEffect(() => {
     if (status === "unauthenticated") router.push("/login");
-  }, [status]);
+  }, [status, router]);
 
   if (status === "authenticated")
     return (

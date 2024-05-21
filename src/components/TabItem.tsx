@@ -23,7 +23,7 @@ const TabItem = ({ href, title, icon }: TabItemProps) => {
         router.push(href);
       }}
     >
-      <Image src={icon} alt={`${title} icon`} width={20} height={20} />
+      <Image src={icon} alt={`${title} icon`} width={20} height={20} style={{ width: "auto", height: "auto" }}/>
       <div className="text-base text-white pl-2.5">{title}</div>
     </div>
   );
